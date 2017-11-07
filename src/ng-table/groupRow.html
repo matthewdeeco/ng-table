@@ -7,13 +7,13 @@
             <strong class="sort-indicator">{{$selGroupTitle}}</strong>
             <button class="btn btn-default btn-xs ng-table-group-close"
                     ng-click="$groupRow.show = false; $event.preventDefault(); $event.stopPropagation();">
-                <span class="glyphicon glyphicon-remove"></span>
+                <span class="fa fa-remove"></span>
             </button>
             <button class="btn btn-default btn-xs ng-table-group-toggle"
                     ng-click="toggleDetail(); $event.preventDefault(); $event.stopPropagation();">
-                <span class="glyphicon" ng-class="{
-                    'glyphicon-resize-small': params.settings().groupOptions.isExpanded,
-                    'glyphicon-resize-full': !params.settings().groupOptions.isExpanded
+                <span class="fa" ng-class="{
+                    'fa-compress': params.settings().groupOptions.isExpanded,
+                    'fa-expand': !params.settings().groupOptions.isExpanded
                 }"></span>
             </button>
         </a>
